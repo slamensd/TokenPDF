@@ -11,7 +11,7 @@ document.getElementById('generate-btn').addEventListener('click', () => {
 });
 
 function generatePDF(tokenId, bookNumber) {
-    const doc = new jsPDF.jsPDF();
+    const doc = new jspdf.jsPDF();
     doc.text(`This is an agreement between the owner of ${tokenId}, which is licensed to ${bookNumber}`, 10, 10);
     doc.save(`Token_${tokenId}.pdf`);
 }
